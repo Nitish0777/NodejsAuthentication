@@ -21,7 +21,9 @@ mongoose.set("strictQuery", false);
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.DATABASE_URI);
+    const conn = await mongoose.connect(process.env.DATABASE_URI, {
+      useNewUrlParser: true,
+    });
     console.log("Mongo DB connected Aman", conn.connection.host);
   } catch (error) {
     console.log("Error in connection to Atlas", error);

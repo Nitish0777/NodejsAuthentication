@@ -1,0 +1,50 @@
+::selection{
+    color: rgb(101, 11, 28);
+    background-color: rgb(156, 140, 140);
+}
+body{
+    background-color: rgb(24, 37, 37);
+    color: rgb(40, 141, 82);
+}
+body>header,body>main,body>footer{
+    width: 95%;
+    margin: auto ;
+    margin-bottom: 20px;
+    
+    border-radius: 30px;
+    border: 1px solid rgb(26, 62, 26);
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px rgb(83, 96, 56);
+}
+header>h2>abbr button,footer>h2>abbr button{
+    cursor: pointer;
+    color: rgb(50, 48, 48);
+    background-color: rgb(60, 97, 75);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 3px solid rgb(60, 97, 75);
+}
+header>h2>abbr button:hover{
+    background-color: rgb(50, 48, 48);
+    color: rgb(40, 141, 82);
+    /* color: rgb(83, 96, 56); */
+}
+footer>h2>abbr button:hover{
+    background-color: rgb(50, 48, 48);
+    color: rgb(40, 141, 82);
+    /* color: rgb(83, 96, 56); */
+}
+
+main{
+
+    margin:10px 0px  ;
+    /* border: 2px solid ora; */
+    min-height: 80%;
+}
+
+
+/* footer{
+    border: 2px solid ;
+} */
+

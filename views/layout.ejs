@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+        <title>
+            <%=title%>
+        </title>
+        <link rel="stylesheet" href="/css/layout.css">
+        
+
+        <%-style%>
+    </head>
+    <body>
+        
+        <header>
+            <%-include("_header")%>
+        </header>
+
+        <main id="mains" >
+            <%- body %>
+        </main>
+
+
+        <footer>
+            <%-include("_footer")%>
+        </footer>
+
+        
+        <%-script%>
+    </body>
+</html>

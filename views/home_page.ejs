@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="container">
+    <% if(locals.user){%>
+        <abbr title="Greetings from the owner of this website">
+            <a>
+                <button>Hi <i><%=user.name%></i>, hope you are doing great in your life..., Keep it up :)</button>
+            </a>
+        </abbr>
+
+        <abbr title="Sign out">
+            <a href="/users/sign-out">
+                <button> Sign Out</button>
+            </a>
+        </abbr>
+        <abbr title="Change your password">
+            <a href="/users/change-password-page">
+                <button>Change Password</button>
+            </a>
+        </abbr>
+    <%}else{%>
+        
+        <abbr title="Go to SignUp page">
+            <a href="/users/sign-up">
+                <button> Sign Up</button>
+            </a>
+        </abbr>
+        <abbr title="Go to SignIn page">
+            <a href="/users/sign-in">
+                <button>Sign In</button>
+            </a>
+        </abbr>
+        <abbr title="Login with Google">
+            <a href="/users/auth/google">
+                <button>Google SignIn/Up</button>
+            </a>
+        </abbr>
+    <%}%>
+    
+</div>
